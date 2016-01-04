@@ -15,6 +15,7 @@ def versions = [
 
 repositories {
 	mavenCentral()
+  maven { url 'http://nexus.squired.ro/content/groups/public/' }
 }
 
 configurations {
@@ -31,7 +32,7 @@ dependencies {
     compile "org.skyscreamer:jsonassert:1.2.3"
     compile "xmlunit:xmlunit:1.6"
     compile "com.jayway.jsonpath:json-path:0.8.1"
-	compile "org.slf4j:slf4j-api:1.7.12"
+	compile "org.slf4j:slf4j-android:1.7.2"
 	compile "net.sf.jopt-simple:jopt-simple:4.9"
 	compile ("junit:junit:4.11") {
         exclude group: "org.hamcrest", module: "hamcrest-core"
